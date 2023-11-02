@@ -1,0 +1,19 @@
+package model;
+
+import java.io.Serializable;
+import jakarta.persistence.*;
+
+
+/**
+ * The persistent class for the Izvodjenje database table.
+ * 
+ */
+@Entity
+@NamedQuery(name="Izvodjenje.findAll", query="SELECT i FROM Izvodjenje i")
+public class Izvodjenje implements Serializable {
+	private static final long serialVersionUID = 1L;
+
+	public Izvodjenje() {
+	}
+
+}

@@ -1,0 +1,19 @@
+package model;
+
+import java.io.Serializable;
+import jakarta.persistence.*;
+
+
+/**
+ * The persistent class for the Reziser database table.
+ * 
+ */
+@Entity
+@NamedQuery(name="Reziser.findAll", query="SELECT r FROM Reziser r")
+public class Reziser implements Serializable {
+	private static final long serialVersionUID = 1L;
+
+	public Reziser() {
+	}
+
+}
